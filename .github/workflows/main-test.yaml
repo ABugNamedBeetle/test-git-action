@@ -5,11 +5,11 @@ on:
       
 jobs:
   demo-first-job:
-      runs-on: alpine
+      runs-on: ubuntu-latest
       steps:
         - run: echo "this is the first job"
   test-tob:
-    runs-on: alpine
+    runs-on: ubuntu-latest
     steps:
       - run: | 
           echo "Hello"
