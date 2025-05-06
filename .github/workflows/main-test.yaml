@@ -1,0 +1,16 @@
+name: Manual worflow
+
+on:
+    workflow_dispatch:
+      
+jobs:
+  demo-first-job:
+      runs-on: alpine
+      steps:
+        - run: echo "this is the first job"
+  test-tob:
+    runs-on: alpine
+    steps:
+      - run: | 
+          echo "Hello"
+          echo "Worlds"
